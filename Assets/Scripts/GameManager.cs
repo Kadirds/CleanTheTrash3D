@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameManager : Singelton<GameManager>
 {
     public GameObject StartP, InGameP, NextP, GameOverP;
-    float Countdown = 2f;
+    public float Countdown = 2f;
+    [SerializeField] private int asySceneIndex = 1;
     public enum GameState
     {
     Start,
